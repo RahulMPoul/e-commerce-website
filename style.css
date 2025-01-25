@@ -51,6 +51,12 @@ border:none;
 margin-left: 12px;
 }
 
+.btn-close:hover{
+
+    transform:rotate(180deg);
+    transition:6s;
+    color: #aa8453;
+}
 .swiper-slide img {
 
 width: 100%;

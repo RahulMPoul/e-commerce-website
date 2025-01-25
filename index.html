@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid ">
             <a class="navbar-brand text-white me-auto" href="#"> Nestora </a><sub></a>(Brand by Poul & Co.)</sub>
-            
+
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -51,17 +51,30 @@
                     0
                 </span>
             </a>
-            <a href="#" class="text-white fs-5 mx-2 position-relative"><ion-icon name="bag-outline"></ion-icon>
+            <a href="#" class="text-white fs-5 mx-2 position-relative" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <ion-icon name="bag-outline"></ion-icon>
                 <span class="position-absolute top-0 start-100 translate-middle bag">
                     0
                 </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-               <img src="./menu.jpg" style="width: 27px;" alt="">
+            <button class="navbar-toggler" type="button">
+                <img src="./menu.jpg" style="width: 27px;" alt="">
             </button>
         </div>
     </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+            <img src="./shopping_cart.gif" width="300px" alt="cart">
+            <p style="color: #777;text-align: center;">Your Cart is Currently Empty</p>
+        </div>
+    </div>
 
     <!-- Swiper -->
     <div class="swiper mySwiper">
