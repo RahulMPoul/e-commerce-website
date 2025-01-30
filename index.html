@@ -20,9 +20,10 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cart</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
@@ -44,7 +45,7 @@
 
                 </div>
             </div>
-            <a href="#" class="text-white fs-5 mx-2 d-done d-lg-block"><ion-icon name="search-outline"></ion-icon> </a>
+            <a href="#" class="text-white fs-5 mx-2 d-done d-lg-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><ion-icon name="search-outline"></ion-icon> </a>
             <a href="#" class="text-white fs-5 mx-2 d-done d-lg-block"><ion-icon name="person-outline"></ion-icon> </a>
             <a href="#" class="text-white fs-5 mx-2 position-relative"><ion-icon name="heart-outline"></ion-icon>
                 <span class="position-absolute top-0 start-100 translate-middle bag">
@@ -63,18 +64,31 @@
             </button>
         </div>
     </nav>
+    <!-- ====Search box===== -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          ...
+        </div>
+      </div>
 
+      <!-- ======Search box end===== -->
+    <!-- ====Cart==== -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"><ion-icon name="cart"></ion-icon>  Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <hr>
         <div class="offcanvas-body">
             <img src="./shopping_cart.gif" width="300px" alt="cart">
-            <p style="color: #777;text-align: center;">Your Cart is Currently Empty</p>
+            <p style="color: #777;text-align:center;">Your Cart is Currently Empty</p>
         </div>
     </div>
+   <!-- ====== Cart End ===== -->
 
     <!-- Swiper -->
     <div class="swiper mySwiper">
