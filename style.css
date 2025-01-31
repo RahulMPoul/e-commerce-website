@@ -122,15 +122,24 @@ object-fit: cover;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    text-align: center;
 }
 .swiper-slide .swiper-title h3{
 
     font-size: 55px;
+    text-transform: uppercase;
 
 }
 .swiper-slide .swiper-title h3:hover{
 
     color: #aa8453;
+}
+.swiper-slide .swiper-title  a{
+
+    color:#fff;
+    text-transform: capitalize;
+
+
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -138,3 +147,51 @@ object-fit: cover;
     color: #aa8453 !important;
 }
 
+.offer{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    
+   
+}
+
+.offer img{
+
+    position: relative;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    transition: 0.8s;
+    object-fit: cover;
+   
+}
+
+.offer:hover img{
+
+    transform: scale(1.1);
+}
+
+.offer .offertext{
+
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    
+}
+.offer .offertext h3 span {
+
+    color: #4aedd7a4;
+}
+
+.offer .offertext p {
+
+    color: #181515;
+    font-size: 15px;
+    text-transform: capitalize;
+
+}
