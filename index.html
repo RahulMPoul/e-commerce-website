@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid ">
             <a class="navbar-brand text-white me-auto" href="#">Nestora</a><sub>(Brand by Poul & Co.)</sub>
             
@@ -171,8 +171,8 @@
             <div class="offer">
                 <img src="./images/chain lamp.jpg" alt="chain lamp offer" class="img-fluid w-100">
                 <div class="offertext">
-                    <h3><span>Chain</span> Lamp</h3>
-                    <p>Get up to 60% off</p>
+                    <h3><span>Chain</span> <lamp>Lamp </lamp></h3>
+                    <p class="chain-lamp">Get up to 60% off</p>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
@@ -185,6 +185,16 @@
                     <p class="offerparagarph">Get up to 30% off</p>
                     <a href="#">Shop Now</a>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="policy">
+                <img src="./images/chain lamp.jpg" alt="Policy">
             </div>
         </div>
     </div>
@@ -210,6 +220,9 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+        const navbar = document.getElementById('navbar');
+        
     </script>
 </body>
 

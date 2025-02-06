@@ -195,3 +195,30 @@ object-fit: cover;
     text-transform: capitalize;
 
 }
+
+.offer .offertext .chain-lamp {
+
+   color: white;
+}
+.offer .offertext lamp {
+
+color: white;
+}
+
+.offer .offertext  a{
+
+    background-color: white;
+    padding: 15px,15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s;
+   
+
+}
+
+.offer:hover .offertext  a{
+
+    background-color: #aa8453;
+    color:#fff;
+}
