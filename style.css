@@ -18,7 +18,7 @@
 .navbar-brand {
 
     padding: 0;
-    margin: 0;
+    
     box-sizing: border-box;
     font-family: "Zen Dots", serif;
     font-weight: 400;
@@ -261,6 +261,7 @@ section{
     height: 80px;
     width: 60px;
     object-fit: cover;
+    
 }
 
 .policy:hover .policy-img img{
@@ -301,4 +302,108 @@ section{
 .policy p{
 
     text-align: center;
+}
+
+.product_card .product_image{
+
+    position: relative;
+    
+}
+.product_card .product_image img {
+
+    transition: 2s;
+   
+}
+
+.product_card .product_image img:nth-child(1){
+
+    position: relative;
+}
+
+.product_card .product_image img:nth-child(2){
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.product_card:hover .product_image img:nth-child(2){
+
+    opacity: 1;
+}
+.product_card:hover  .product_icon{
+
+
+    opacity: 1;
+}
+
+ .product_icon {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display:flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.product_icon a {
+    margin: 5px 0px;
+    background-color: #fff;
+    color:rgb(54, 235, 205);
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    
+}
+
+.product_offer{
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.product_offer p{
+
+    background-color: red;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.product_info .price {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.product_info .price p:nth-child(2) {
+
+    color: #7f7d7df4;
+    text-decoration: line-through 2px ;
+    text-decoration-color: red ;
+   
+}
+.product_info h6{
+
+    margin: 3px 0px;
+    text-align: center;
+}
+.product_info .rating{
+
+   color: #f9bf0d ;
+   font-size: 20px;
+   margin-top: 2px;
+   text-align: center;
+  margin-bottom: 23px;
 }
