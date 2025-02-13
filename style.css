@@ -322,6 +322,7 @@ section{
 .product_card .product_image img {
 
     transition: 2s;
+    opacity: 0.8;
    
 }
 
